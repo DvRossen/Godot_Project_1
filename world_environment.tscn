@@ -6,20 +6,20 @@
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g76qd"]
 albedo_color = Color(0.580392, 0, 1, 1)
-metallic = 1.0
+metallic_specular = 1.0
 
 [node name="WorldEnvironment" type="WorldEnvironment"]
 environment = SubResource("Environment_1qvfw")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.13364, 2.28499)
+transform = Transform3D(1, 0, 0, 0, 0.864827, 0.502069, 0, -0.502069, 0.864827, 0, 4.5, 3)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.941353, 0.337424, 0, -0.337424, 0.941353, -0.198225, 2.53783, 3.56809)
 shadow_enabled = true
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(0.631136, -0.775672, 0, 0.669992, 0.545148, 0.50391, -0.390869, -0.318036, 0.863756, -0.0627518, 2.03381, -2.69702)
+transform = Transform3D(0.634131, -0.779353, 0, 0.673171, 0.547735, 0.506301, -0.392724, -0.319545, 0.867855, 0, 2, -3)
 material_override = SubResource("StandardMaterial3D_g76qd")
 script = ExtResource("1_67o7s")
 speed = Vector3(50, 50, 50)
